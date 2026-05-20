@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Philip's web 3D App</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="index.html">Philip's 3D App</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNavbar">
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link text-white" href="index.html">Home</a>
+      <a class="nav-link text-white active" href="about.html">About</a>
+      <a class="nav-link text-white" href="submission.html">Submission</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-section">
+  <h1>About Page</h1>
+  <p>Design process, technologies and development overview.</p>
+</header>
+
+<main class="container main-content">
+
+<div class="card mb-4">
+
+  <h2>Project Overview</h2>
+
+  <p>
+    This project is an interactive 3D web application created for the
+    3D Web Application assignment. The application showcases three
+    Blender-created drink models: Coke, Fanta and Sprite.
+  </p>
+
+  <p>
+    Users can switch between models and interact with them using
+    animation controls, wireframe mode, lighting controls and camera movement.
+  </p>
+
+  <!-- demo -->
+  <div class="card mb-4">
+    <h2>Demo Video</h2>
+
+    <video class="w-100 rounded" controls>
+      <source src="assets/videos/demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- scrnsht -->
+
+  <div class="row g-4 mt-2">
+    <h2>Screenshots</h2>
+    <div class="col-md-6">
+      <img src="assets/images/Homepage.png" class="img-fluid rounded about-img" alt="Homepage Screenshot">
+    </div>
+
+    <div class="col-md-6">
+      <img src="assets/images/Coke_wireframe.png" class="img-fluid rounded about-img" alt="Wireframe Mode">
+    </div>
+
+  </div>
+
+  <div class="row g-4 mt-4">
+
+    <div class="col-md-4">
+      <img src="assets/images/coke_model.png" class="img-fluid rounded about-img" alt="Coke Model">
+    </div>
+
+    <div class="col-md-4">
+      <img src="assets/images/fanta_model.png" class="img-fluid rounded about-img" alt="Fanta Model">
+    </div>
+
+    <div class="col-md-4">
+      <img src="assets/images/Sprite_model.png" class="img-fluid rounded about-img" alt="Sprite Model">
+    </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="card mb-4">
+    <h2>Testing</h2>
+    <p>
+    I tested the application as I built it, checking that everything worked as 
+    expected across different screen sizes and browsers.
+    </p>
+    
+    <ul>
+      <li>Tested model loading and switching functionality</li>
+      <li>" " animations and audio playback</li>
+      <li>" " responsive layout using browser developer tools</li>
+      <li>" " wireframe mode, lighting controls and camera reset</li>
+      <li>Verified that all textures and GLB files loaded correctly</li>
+    </ul>
+  </div>
+
+  <div class="card mb-4">
+    <h2>Technologies Used</h2>
+
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+       <li>w3schools</li>
+      <li>Bootstrap 5</li>
+      <li>JavaScript</li>
+      <li>Three.js</li>
+      <li>Blender</li>
+    </ul>
+  </div>
+
+  <div class="card mb-4">
+    <h2>Interaction Features</h2>
+
+    <ul>
+      <li>3D model switching</li>
+      <li>OrbitControls camera movement</li>
+      <li>Animation playback</li>
+      <li>Wireframe mode</li>
+      <li>Lighting controls</li>
+      <li>Reset camera feature</li>
+    </ul>
+  </div>
+
+
+  <!-- AI usage record -->
+  <div class="card mb-4">
+  <h2>Generative AI Usage Record</h2>
+
+  <p>
+    This section records how generative AI tools were used during the development
+    of this 3D web application.
+  </p>
+
+  <div class="table-responsive">
+    <table class="table custom-table">
+      <thead>
+        <tr>
+          <th>Use Case</th>
+          <th>Tool</th>
+          <th>Outcome</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Debugging audio playback</td>
+          <td>ChatGPT</td>
+          <td>It helped me catch an issues where the audio files were pointing to the 
+            wrong folder path, which was stopping the sounds from loading
+          </td>
+        </tr>
+        
+         <tr>
+          <td>Fixing model loading</td>
+          <td>ChatGPT</td>
+          <td>
+            Helped correct incorrect GLB file paths when the 3D models were 
+            not appearing in the browser.
+          </td>
+
+
+
+        <tr>
+          <td>Three.js debugging</td>
+          <td>ChatGPT</td>
+          <td>Helped me with fixing the animation playback and camera positioning issues 
+            during the development
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  <div class="card mb-4">
+    <h2>Development Resources</h2>
+
+    <div class="table-responsive">
+      <table class="table custom-table">
+        <thead>
+          <tr>
+            <th>Resource</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Three.js Documentation</td>
+            <td>Model loading, lighting and interaction</td>
+          </tr>
+
+          <tr>
+            <td>Bootstrap Documentation</td>
+            <td>Responsive layout and interface structure</td>
+          </tr>
+
+          <tr>
+            <td>Blender Tutorials</td>
+            <td>3D modelling and GLB exporting</td>
+          </tr>
+
+          <tr>
+            <td>University Labs</td>
+            <td>Overall understanding of 3D web technologies</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+  <div class="card mb-4">
+  <h2>Video Resources</h2>
+
+  <p>
+    These tutorials and videos helped me during the development of the 3D models and Three.js integration.
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://youtu.be/IrImZ9GKhEQ?si=J0uVHSUIaS550YR1" target="_blank">
+        Blender Can Modelling Tutorial
+      </a>
+    </li>
+
+    <li>
+      <a href="https://youtu.be/BykKS_ie3Dc?si=QHg99gVgE7b2rRVf" target="_blank">
+        Blender Can Modelling Tutorial 2
+      </a>
+    </li>
+
+    <li>
+      <a href="https://universityofsussex-my.sharepoint.com/:v:/r/personal/dtc27_sussex_ac_uk/Documents/3D%20web/2026/Adding%20can%20model.mp4?csf=1&web=1&e=VNjw4o&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">
+        Three.js GLTFLoader Tutorial
+      </a>
+    </li>
+
+    <li>
+      <a href="https://universityofsussex-my.sharepoint.com/:v:/r/personal/dtc27_sussex_ac_uk/Documents/Can%20crush%20animation.webm?csf=1&web=1&e=vT7Ysj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D" target="_blank">
+        Blender Animation Tutorial
+      </a>
+    </li>
+  </ul>
+
+</div>
+</main>
+
+<footer>
+  <div class="social-links mb-2">
+
+    <a href="https://facebook.com/" class="social-icon" target="_blank">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/" class="social-icon" target="_blank">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="https://twitter.com/" class="social-icon" target="_blank">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a href="https://github.com/PNT927" class="social-icon" target="_blank">
+      <i class="bi bi-github"></i>
+    </a>
+
+  </div>
+  <p>3D Web Application Assignment</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll(".about-img").forEach(function(img) {
+  img.addEventListener("click", function() {
+    img.classList.toggle("clicked");
+  });
+});
+</script>
+
+</body>
+</html>

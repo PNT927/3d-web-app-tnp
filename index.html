@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip's Web 3D Drinks App</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="index.html">Philip's 3D App</a>
+
+    <div class="ms-auto">
+      <a class="nav-link d-inline text-white" href="index.html">Home</a>
+      <a class="nav-link d-inline text-white" href="about.html">About</a>
+      <a class="nav-link d-inline text-white" href="submission.html">Submission</a>
+    </div>
+  </nav>
+
+  <header class="hero-section text-center">
+    <h1>Interactive 3D Drinks Showcase</h1>
+    <p>Custom-made 3D drink models with animation, lighting and wireframe controls.</p>
+  </header>
+
+  <main class="container-fluid main-content">
+    <div class="row g-4">
+
+      <section class="col-lg-8">
+        <div class="viewer-card">
+          <div id="viewer"></div>
+        </div>
+      </section>
+
+      <section class="col-lg-4">
+        <div class="control-card">
+          <h2>Choose Model</h2>
+
+          <div class="button-group">
+            <button class="btn btn-red" onclick="loadModel('coke')">Coke</button>
+            <button class="btn btn-orange" onclick="loadModel('fanta')">Fanta</button>
+            <button class="btn btn-green" onclick="loadModel('sprite')">Sprite</button>
+          </div>
+
+          <h2>Interaction</h2>
+
+          <div class="button-group">
+            <button class="btn btn-success" onclick="startRotation()">Start Spin</button>
+            <button class="btn btn-danger" onclick="stopRotation()">Stop Spin</button>
+
+            <button class="btn control-btn" onclick="toggleWireframe()">
+              Wireframe
+            </button>
+
+            <button id="lightSwitchBtn" class="btn control-btn" onclick="toggleLight()">
+              <span id="lightSwitch" class="switch on"></span>
+              <span id="lightText">Light On</span>
+            </button>
+
+            <button class="btn control-btn" onclick="resetCamera()">
+              Reset Camera
+            </button>
+          </div>
+
+          <div class="info-box mt-4">
+            <h3 id="model-title">Coke Model</h3>
+
+            <p id="model-description">
+              This model was created in Blender and exported as a GLB file for use in the web application.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="text-center">
+    <div class="social-links mb-2">
+
+      <a href="https://facebook.com/" class="social-icon" target="_blank">
+        <i class="bi bi-facebook"></i>
+      </a>
+
+      <a href="https://instagram.com/" class="social-icon" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a href="https://twitter.com/" class="social-icon" target="_blank">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+
+      <a href="https://github.com/PNT927" class="social-icon" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
+
+    </div>
+
+    <p>
+      3D Web Application Assignment | Built with Blender, HTML, CSS, Bootstrap and JavaScript
+    </p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dat.gui/build/dat.gui.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
